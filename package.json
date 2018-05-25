@@ -1,0 +1,37 @@
+{
+  "name": "webpack-4-chunk-splitting-bug",
+  "version": "1.0.0",
+  "description": "demonstrates webpack 4 chunk splitting bug",
+  "author": "Garth Kidd <gkidd@garthk.com>",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "files": [
+    "*.json",
+    "*.md",
+    "dist",
+    "src",
+    "test"
+  ],
+  "typings": "dist/index.d.ts",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/source-map-support": "^0.4.0",
+    "@types/uuid": "^3.4.3",
+    "clean-webpack-plugin": "^0.1.16",
+    "rimraf": "^2.5.4",
+    "ts-loader": "4.3.x",
+    "tslint": "5.10.x",
+    "typescript": "2.8.x",
+    "webpack": "4.8.x",
+    "webpack-cli": "2.1.x"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf build dist reports *.tgz",
+    "prepublish": "tsc -p tsconfig.build.json"
+  }
+}

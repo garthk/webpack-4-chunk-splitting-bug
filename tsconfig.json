@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": [
+      "es2017"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "strict": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "target": "es2017",
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ]
+}

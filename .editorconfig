@@ -1,0 +1,4 @@
+root = false
+
+[template.yml]
+indent_size = 2
